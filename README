@@ -6,14 +6,18 @@ heavily from ideas in Dan Manges' UnitRecord and UnitController.
 Loading UnitMailer:
 
   require "unit_mailer"
+
+== Test/Unit Setup
   
 In the setup method for your test case:
   
   def setup
-    ActionMailer::Base.do_not_render_view
+    ActionMailer::Base.do_not_render_email
   end
   
-Or for your Test/Spec:
+== Test/Spec Setup
+  
+In the before block for your describe block:
 
   before { ActionMailer::Base.do_not_render_email }    
   
