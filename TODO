@@ -1,0 +1,8 @@
+- Change to work at your individual mailer's level, not the entire "ActionMailer::Base" level.
+  - Update the README when this change is made.
+- Add actual tests.
+- Change to use modules and elegantly include them into ActionMailer::Base and ActionMailer::TestCase
+  rather than brutally duck-punching them.
+- Choose a better signature for seeing what was rendered, similar to UnitController's assert_rendered,
+  and then add this to ActionMailer::TestCase rather than living in ActionMailer::Base.
+- Add a way to determine what MIME type(s) were rendered.  (For example, HTML, text/plain, etc.)
