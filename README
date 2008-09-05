@@ -3,9 +3,11 @@
 UnitMailer stubs email rendering to help with unit testing Rails mailers.  It borrows
 heavily from ideas in Dan Manges' UnitRecord and UnitController.
 
-Loading UnitMailer:
-
-  require "unit_mailer"
+Using UnitMailer:
+* Just require "unit_mailer" in a test_helper.
+* Be sure your test cases inherit from ActionMailer::TestCase for extra magic,
+  especially automatic resetting of of the do_not_render flag, allowing other
+  tests to render normally.
 
 == Test/Unit Setup
   
