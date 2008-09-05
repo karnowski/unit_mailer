@@ -5,6 +5,7 @@ ActionMailer::Base.class_eval do
   @@rendered = nil
   @@render_email = true
   
+  #TODO: make sure to have this take a block and pass it up the chain
   def render_with_unit_mailer(options)
     if @@render_email
       render_without_unit_mailer(options)

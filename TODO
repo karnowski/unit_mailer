@@ -6,3 +6,4 @@
 - Choose a better signature for seeing what was rendered, similar to UnitController's assert_rendered,
   and then add this to ActionMailer::TestCase rather than living in ActionMailer::Base.
 - Add a way to determine what MIME type(s) were rendered.  (For example, HTML, text/plain, etc.)
+- Rake task to build a gem
